@@ -15,12 +15,12 @@ OBJS = $(SRCS:.cpp=.o)
 
 # Regla para compilar el programa
 $(TARGET): $(OBJS)
-    $(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
 # Regla para compilar los archivos fuente en archivos objeto
 %.o: %.cpp
-    $(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Regla para limpiar el proyecto
 clean:
-    rm -f src/*.o $(TARGET)
+	rm -
